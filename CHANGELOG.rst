@@ -2,7 +2,6 @@
 CHANGELOG
 =========
 
-
 unreleased
 ------------------
 
@@ -10,6 +9,10 @@ unreleased
 * Corrected date information function which extracts info from filename for cor-files. (:pr:`45`) `Marius Winkler`_.
 * Added dynamic placeholder replacement in global attributes. (:pr:`46`) `Marius Winkler`_.
 * Added function to get sonde serial number (:pr:`47`) `Marius Winkler`_.
+
+0.0.8 (2025-06-05)
+------------------
+* Added Wagner&Pruss option for the calculation of the saturation vapour pressure. (:pr:`43`) `Marius Winkler`_.
 
 0.0.7 (2024-09-24)
 ------------------
