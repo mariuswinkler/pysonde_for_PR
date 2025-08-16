@@ -232,7 +232,7 @@ class Sounding:
 
         # Mixing ratio
         e_s = td.calc_saturation_pressure(
-            self.profile.temperature.values, method="wagner_pruss"
+            self.profile.temperature.values  # , method="wagner_pruss" or "hardy1998"
         )
         if "pint" in e_s.dtype.__str__():
             mixing_ratio = (

@@ -43,7 +43,9 @@ def prepare_data_for_interpolation(ds, uni, variables, reader=pysondeL1):
     td.metpy.units.units = uni
     theta = td.calc_theta_from_T(ds["ta"], ds["p"])
 
-    e_s = td.calc_saturation_pressure(ds["ta"], method="wagner_pruss")
+    e_s = td.calc_saturation_pressure(
+        ds["ta"]  # , method="wagner_pruss" or "hardy1998"
+    )
     e = ds["rh"] * e_s
     w = td.calc_wv_mixing_ratio(ds["p"], e)
     q = w / (1 + w)
